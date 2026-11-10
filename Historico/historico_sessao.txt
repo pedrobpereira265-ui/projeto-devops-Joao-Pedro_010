@@ -1202,4 +1202,15 @@ no changes added to commit (use "git add" and/or "git commit -a")
 [?2004h[0;32m@pedrobpereira265-ui [1;31m➜ [1;34m/workspaces/projeto-devops-Joao-Pedro_010 [0;36m([1;31mmain[0;36m) [0m$ git commit -m "Atualização2"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kex[K[Kgit add
 [?2004lNothing specified, nothing added.
 [33mhint: Maybe you wanted to say 'git add .'?[m
-[33mhint: Disable this message with "gi
+[33mhint: Disable this message with "git config set advice.addEmptyPathspec false"[m
+[?2004h[0;32m@pedrobpereira265-ui [0m➜ [1;34m/workspaces/projeto-devops-Joao-Pedro_010 [0;36m([1;31mmain[0;36m) [0m$ git add .
+[?2004l[?2004h[0;32m@pedrobpereira265-ui [0m➜ [1;34m/workspaces/projeto-devops-Joao-Pedro_010 [0;36m([1;31mmain[0;36m) [0m$ git commit -a
+[?2004lhint: Waiting for your editor to close the file... exit
+^[[A^[[B        
+exit
+exit
+^A^A                      [KAborting commit due to empty commit message.
+[?2004h[0;32m@pedrobpereira265-ui [1;31m➜ [1;34m/workspaces/projeto-devops-Joao-Pedro_010 [0;36m([1;31mmain[0;36m) [0m$ exit
+[?2004lexit
+
+Script done on 2026-11-10 00:15:32+00:00 [COMMAND_EXIT_CODE="1"]

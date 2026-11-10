@@ -1,0 +1,43 @@
+    1  docker --version
+    2  docker version
+    3  git pull
+    4  cd app
+    5  python3 -m venv .venv
+    6  source .venv/bin/activate
+    7  pip install -r requirements.txt 
+    8  python app.py 
+    9  /workspaces/projeto-devops-Joao-Pedro_010/.venv/bin/python -m pip install -r requirements.txt
+   10  python app.py 
+   11  curl http://localhost:8000/saude
+   12  python app.py 
+   13  pytest -v
+   14  python app.py 
+   15  python -m pytest -q
+   16  ls
+   17  source .venv/bin/activate
+   18  pip install -r requirements.txt
+   19  python -m pytest -q
+   20  cd /workspaces/projeto-devops-Joao-Pedro_010/app
+   21  ls -la
+   22  ls -la .venv/bin/python
+   23  python -m pytest -q
+   24  history > historico_terminal.txt
+   25  cd ..
+   26  git add app .gitignore
+   27  git commit -m "API Flask da Dupla"
+   28  git push
+   29  exit
+   30  curl http://localhost:8000/saude
+   31  curl http://localhost:8000/aluno
+   32  pytest -v
+   33  python -m pytest -q
+   34  exit
+   35  script historico_sessao.txt
+   36  git push
+   37  git commit -m "Deu tudo certo"
+   38  git push
+   39  docker images projeto-devops
+   40  time docker run --rm projeto-devops:v1 python -c "print('oi')"
+   41  git pull
+   42  git log --oneline -5
+   43  history > historico_terminal2.txt
