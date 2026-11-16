@@ -14,6 +14,7 @@ jobs:
         run: pip install -r app/requirements.txt
       - name: Rodar testes
         run: cd app && python -m pytest -q
+        
   construir-imagem:
      needs: testar
      runs-on: ubuntu-latest
