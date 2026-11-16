@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 # ===== VARIAÇÃO DA DUPLA (mude estes valores) =====
 NOME_DUPLA = "projeto-devops-Joao-Pedro_010"
 
-MENSAGEM = "Olá Mundo, está um belo dia lá fora!"
+MENSAGEM = "Olá Mundo tudo bem? está um belo dia lá fora!"
 
 PORTA = 8000
 # ==================================================
@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 @app.route("/saude")
 def saude():
- return jsonify(status="ok", versao=VERSAO)
+ return jsonify(status="Erro", versao=VERSAO)
 
 @app.route("/aluno")
 def aluno():
