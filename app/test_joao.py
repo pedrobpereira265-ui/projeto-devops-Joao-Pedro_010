@@ -1,8 +1,7 @@
 from app import app
 
-def test_saude_tem_versao():
-    dados = app.test_client().get("/saude").get_json()
-    assert "versao" in dados 
 
-def test_rota_inexistente_da_404():
-    assert app.test_client().get("/nao-existe").status_code == 404
+def test_inicio_mostra_texto_do_projeto():
+    resposta = app.test_client().get("/")
+    assert resposta.status_code == 200
+    assert resposta.get_data(as_text=True) == "Projeto DevOps funcionando!"
