@@ -27,12 +27,14 @@ jobs:
           cd app && python -m pytest -q
       - name: Gerar página de status
         run: |
-          cat > site/status.html <Status da aplicação
-          - Commit: ${GITHUB_SHA::7}
-          - Publicado em: $(date -u '+%d/%m/%Y %H:%M UTC')
-          - Testes: aprovados
-
-
+          mkdir -p site
+          cat > site/status.html << EOF
+          <h1>Status da aplicação</h1>
+          <ul>
+            <li>Commit: ${GITHUB_SHA::7}</li>
+            <li>Publicado em: $(date -u '+%d/%m/%Y %H:%M UTC')</li>
+            <li>Testes: aprovados</li>
+          </ul>
           EOF
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
