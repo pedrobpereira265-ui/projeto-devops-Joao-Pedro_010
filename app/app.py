@@ -25,4 +25,4 @@ def aluno():
 def inicio():
     return "Projeto DevOps funcionando!"
 if __name__ == "__main__":
- app.run(host="0.0.0.0", port=PORTA)
+ app.run(host="0.0.0.0", port=8001)
